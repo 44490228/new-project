@@ -65,7 +65,14 @@ function Registration() {
           <p className="top-section-english-text">
             The best amongst you is the one who learns the <br /> Qur'an and teaches it{' '}
           </p>
-          <button className="top-section-button">Book a Free Trail</button>
+          <a
+            href="https://wa.me/923194908790"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="top-section-button"
+          >
+            Book a Free Trial
+          </a>
         </div>
       </div>
       <div className="form-container-second">

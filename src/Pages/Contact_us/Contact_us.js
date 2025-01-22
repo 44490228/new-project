@@ -15,7 +15,14 @@ function Contact_us() {
                     <p className="top-section-english-text">
                         The best amongst you is the one who learns the <br /> Qur'an and teaches it{' '}
                     </p>
-                    <button className="top-section-button">Book a Free Trail</button>
+                    <a
+                        href="https://wa.me/923194908790"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="top-section-button"
+                    >
+                        Book a Free Trial
+                    </a>
                 </div>
 
 
@@ -67,19 +74,19 @@ function Contact_us() {
 
                         </div>
                         <div className='line-img-wraper-contact'>
-                            <img src='/Images/bottom-line.png' alt='line'/>
+                            <img src='/Images/bottom-line.png' alt='line' />
 
                         </div>
                         <div className='social-links-contact-div-wrape-uper'>
                             <p className='folow-text'>Follow us:</p>
-                        <div className='social-links-contact-div-wrape'>
-                            <img  className='follow-logo-img' src='/Images/tiktok-bottom.png' alt='social'/>
-                            <img className='follow-logo-img' src='/Images/insta-bottom.png' alt='social'/>
-                            <img className='follow-logo-img' src='/Images/face-bottom.png' alt='social'/>
-                            <img className='follow-logo-img' src='/Images/x-bottom.png' alt='social'/>
-                            <img className='follow-logo-img' src='/Images/email-bottom.png' alt='social'/>
+                            <div className='social-links-contact-div-wrape'>
+                                <img className='follow-logo-img' src='/Images/tiktok-bottom.png' alt='social' />
+                                <img className='follow-logo-img' src='/Images/insta-bottom.png' alt='social' />
+                                <img className='follow-logo-img' src='/Images/face-bottom.png' alt='social' />
+                                <img className='follow-logo-img' src='/Images/x-bottom.png' alt='social' />
+                                <img className='follow-logo-img' src='/Images/email-bottom.png' alt='social' />
 
-                        </div>
+                            </div>
                         </div>
 
                     </div>
@@ -102,9 +109,9 @@ function Contact_us() {
                                     className="form-textarea"
                                 />
                                 <div className='contact-form-bottom-btn'>
-                                <button type="submit" className="form-button">
-                                    Submit
-                                </button>
+                                    <button type="submit" className="form-button">
+                                        Submit
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -117,8 +124,8 @@ function Contact_us() {
             </div> */}
 
             </div>
-            
-            <Footer/>
+
+            <Footer />
 
         </div>
     )

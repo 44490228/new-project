@@ -32,6 +32,7 @@ line-height: 26.63px;
 text-align: center;
 color: #fff;
 border: none;
+text-decoration: none !important;
 }
 .top-section-center-div
 {

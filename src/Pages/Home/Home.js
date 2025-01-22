@@ -26,9 +26,16 @@ function Home() {
                         <img className='arabic-img' src="/Images/arabic.png" alt="arabic" />
                     </div>
                     <p className='top-section-english-text'>
-                        The best amongst you is the one who learns the <br /> Qur'an and teaches it 
+                        The best amongst you is the one who learns the <br /> Qur'an and teaches it
                     </p>
-                    <button className='top-section-button'>Book a Free Trial</button>
+                    <a
+                        href="https://wa.me/923194908790"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="top-section-button"
+                    >
+                        Book a Free Trial
+                    </a>
                 </div>
             </div>
             <div className='offer-section'>
@@ -61,7 +68,7 @@ function Home() {
                     <div className='choose-content-left'>
                         <div className='first-row'>
                             <div className='card-choose-left'>
-                                <img className='icon-img-width'  src='/Images/Frame 1261153062.png' alt='staff' />
+                                <img className='icon-img-width' src='/Images/Frame 1261153062.png' alt='staff' />
                                 <div className='card-choose-left-content-div'>
                                     <p className='experence-text'>Experienced Staff</p>
                                     <p className='sb-text-card-choose'>Our dedicated and highly-qualified instructors are committed to providing the best support for your children’s learning journey.</p>
@@ -93,7 +100,7 @@ function Home() {
                         </div>
                     </div>
                     <div className='choose-section-right-side'>
-                        <img className='boys-circle-img-width'  src="/Images/Group 1707486647.png" alt='boy' />
+                        <img className='boys-circle-img-width' src="/Images/Group 1707486647.png" alt='boy' />
                     </div>
                 </div>
             </div>
