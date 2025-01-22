@@ -1,0 +1,20 @@
+.accordiian-wrape
+{
+    padding: 29px 19px !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 4px 4px 0px #00000040 !important;
+    margin:0px !important;
+
+}
+.accordians-wraper
+{
+    display: flex !important;
+    flex-direction: column !important;
+   gap: 15px !important;
+}
+@media(max-width:460px)
+{
+    .accordiian-wrape {
+        padding: 10px 10px !important;
+    }
+}
