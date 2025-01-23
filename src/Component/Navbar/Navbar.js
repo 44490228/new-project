@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -17,12 +17,26 @@ const pages = [
   { name: "Fees Plan", path: "/Fees-plan" },
   { name: "Registration", path: "/Registration" },
   { name: "About", path: "/About-us" },
+  {name:'contact us',path:"/Contact-us"}
 ];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 780)
+  const [anchorElNav, setAnchorElNav] = useState(null);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 780);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -139,7 +153,7 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* Contact Us Button for Desktop */}
-          <Box sx={{ display: { xs: "none", md: "block" } }}>
+          {!isSmallScreen && (<Box sx={{ display: { md: "none", lg: "block" } }}>
             <Button
               variant="contained"
               sx={{
@@ -160,7 +174,7 @@ function ResponsiveAppBar() {
             >
               Contact Us
             </Button>
-          </Box>
+          </Box>)}
 
           {/* Contact Us Button for Mobile */}
           <Box sx={{ display: { xs: "block", md: "none" } }}>

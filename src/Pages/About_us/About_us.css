@@ -261,6 +261,7 @@ border: none;
         line-height: 19.63px;
         padding: 14px 40px;
         border-radius: 15px;
+        text-decoration: none;
     }
     .about-heading {
         font-size: 35px;

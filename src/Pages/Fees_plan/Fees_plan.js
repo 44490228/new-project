@@ -38,12 +38,12 @@ function Fees_plan() {
                                     <p className='startup-text'>Startup</p>
                                 </div>
                             </div>
-                            <img src='/Images/Line 2.png' alt='line' />
+                            <img className='white-line' src='/Images/Line 2.png' alt='line' />
                             <div className='fees-in-dollar-wrape'>
                                 <p className='dollar-text'>$20</p>
                                 <p className='sb-text-dollar'>Per member, per Month</p>
                             </div>
-                            <img src='/Images/Line 2.png' alt='line' />
+                            <img className='white-line' src='/Images/Line 2.png' alt='line' />
                             <div className='facilities-provide-wrape'>
                                 <div className='top-tick-or-text-wrape'>
                                     <img src='/Images/feesplan-tick-green.svg' alt='tick' />
@@ -85,12 +85,12 @@ function Fees_plan() {
                                 <p className='startup-text-second'>Premium </p>
                             </div>
                         </div>
-                        <img src='/Images/Line 4.png' alt='line' />
+                        <img className='white-line' src='/Images/Line 4.png' alt='line' />
                         <div className='fees-in-dollar-wrape'>
                             <p className='dollar-text-second'>$25</p>
                             <p className='sb-text-dollar-second'>Per member, per Month</p>
                         </div>
-                        <img src='/Images/Line 4.png' alt='line' />
+                        <img className='white-line' src='/Images/Line 4.png' alt='line' />
                         <div className='facilities-provide-wrape'>
                             <div className='top-tick-or-text-wrape'>
                                 <img src='/Images/feesplan-tick-white.svg' alt='tick' />
@@ -132,12 +132,12 @@ function Fees_plan() {
                                     <p className='startup-text'>Premium Plus</p>
                                 </div>
                             </div>
-                            <img src='/Images/Line 2.png' alt='line' />
+                            <img className='white-line' src='/Images/Line 2.png' alt='line' />
                             <div className='fees-in-dollar-wrape'>
                                 <p className='dollar-text'>$30</p>
                                 <p className='sb-text-dollar'>Per member, per Month</p>
                             </div>
-                            <img src='/Images/Line 2.png' alt='line' />
+                            <img className='white-line' src='/Images/Line 2.png' alt='line' />
                             <div className='facilities-provide-wrape'>
                                 <div className='top-tick-or-text-wrape'>
                                     <img src='/Images/feesplan-tick-green.svg' alt='tick' />
