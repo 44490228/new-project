@@ -94,7 +94,7 @@ function Fees_plan() {
                         <div className='facilities-provide-wrape'>
                             <div className='top-tick-or-text-wrape'>
                                 <img src='/Images/feesplan-tick-white.svg' alt='tick' />
-                                <p className='tick-text-second'>3 Days Per Week</p>
+                                <p className='tick-text-second'>4 Days Per Week</p>
                             </div>
                             <div className='top-tick-or-text-wrape'>
                                 <img src='/Images/feesplan-tick-white.svg' alt='tick' />

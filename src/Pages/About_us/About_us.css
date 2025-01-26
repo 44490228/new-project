@@ -98,6 +98,10 @@ border-radius: 15px;
 background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
 color: #fff;
 border: none;
+text-decoration: none !important;
+}
+.about-contact-btn:hover{
+    background: linear-gradient(to right, #2BA59B, #103F3B);
 }
 @media(max-width:1380px)
 {

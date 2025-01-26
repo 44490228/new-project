@@ -1,7 +1,6 @@
-.top-section
-{
+.top-section {
     padding: 243px 0px 243px 0px !important;
-    background: url("/public/Images/newww.png");
+    background: url("/public/Images/top-ddd.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,330 +8,386 @@
     align-items: center;
     justify-content: center;
 }
-.top-section-english-text
-{
+.top-section-english-text {
     font-family: "Inter-regular";
-font-size: 28px;
-font-weight: 400;
-line-height: 33.89px;
-text-align: center;
-color: #fff;
-margin-top: 20px !important;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.89px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px !important;
 }
-.top-section-button
-{
+
+
+.image-container {
+    overflow: hidden; /* Ensures the image stays within bounds */
+    display: inline-block;
+  }
+  
+  .hover-grow-img {
+    width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .hover-grow-img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+  }
+  
+
+.top-section-button {
     background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
-border-radius: 15px;
-padding: 26px 72px;
-max-width: 320px;
-font-family: 'Inter-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: center;
-color: #fff;
-border: none;
-text-decoration: none !important;
+    border-radius: 15px;
+    padding: 26px 72px;
+    max-width: 320px;
+    font-family: 'Inter-semibold';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    text-decoration: none !important;
 }
-.top-section-center-div
-{
+
+.top-section-center-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.offer-card-wraper
-{
+
+.offer-card-wraper {
     margin-top: 80px !important;
-    display: grid; 
-    grid-template-columns: repeat( 3,auto); /* Responsive columns */
-    grid-template-rows: repeat(2, auto); 
-    gap: 30px; /* Space between grid items */ 
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* Responsive columns */
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    /* Space between grid items */
 }
-.offer-section
-{
+
+.offer-section {
     padding: 150px 120px;
 }
-.offer-section-top-text
-{
+
+.offer-section-top-text {
     font-family: "Inter-regular";
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: center;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: center;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
 }
-.offer-section-second-text
-{
+
+.offer-section-second-text {
     font-family: "Inter-bold";
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: center;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin: 0px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: center;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin: 0px !important;
 }
-.view-btn
-{
-    font-family:"Inter-regular";
-font-size: 22px;
-font-weight: 400;
-line-height: 26.63px;
-text-align: center;
-color: #fff;
-border: none;
-border-radius: 15px;
-background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
-padding: 19px 0px;
-width: 265px;
-height: 65px;
+
+.top-section-button:hover {
+    background: linear-gradient(to right, #2BA59B, #103F3B);
 }
-.offer-section-bottom-btn-wrape
+.view-btn:hover
 {
+    background: linear-gradient(to right, #2BA59B, #103F3B);  
+}
+
+.view-btn {
+    font-family: "Inter-regular";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.63px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
+    padding: 19px 0px;
+    width: 265px;
+    height: 65px;
+}
+
+.offer-section-bottom-btn-wrape {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 60px !important;
 }
-.card-choose-left-content-div
-{
+
+.card-choose-left-content-div {
     max-width: 317px;
 }
-.experence-text
-{
+
+.experence-text {
     font-family: "Inter-semibold";
-font-size: 25px;
-font-weight: 600;
-line-height: 30.26px;
-text-align: left;
-color: #000000;
-margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30.26px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 12px;
 }
-.sb-text-card-choose
-{
+
+.sb-text-card-choose {
     font-family: "Inter-regular";
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-color: #000000;
-margin: 0px !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    margin: 0px !important;
 }
-.card-choose-left
-{
+
+.card-choose-left {
     display: flex;
     flex-direction: row;
     gap: 15px;
     justify-content: left;
     align-items: flex-start;
 }
-.choose-section-top-text
-{
+
+.choose-section-top-text {
     font-family: "Inter-regular";
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 15px !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 15px !important;
 }
-.choose-section-second-text
-{
+
+.choose-section-second-text {
     font-family: "Inter-bold";
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin: 0px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin: 0px !important;
 }
-.choose-content-left
-{
+
+.choose-content-left {
     margin-top: 71px !important;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.choose-section
-{
+
+.choose-section {
     padding: 0px 118px 150px 118px;
 }
-.first-row
-{
+
+.first-row {
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
 }
-.choose-section-left-right-wraper
-{
+
+.choose-section-left-right-wraper {
     display: flex;
     flex-direction: row;
     gap: 7px;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
-.fasten-section
-{
-    padding:186px 50px ;
+
+.fasten-section {
+    padding: 186px 50px;
     background: url('/public/Images/11.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
-.fasten-text
-{
+
+.fasten-text {
     font-family: 'Inter-bold';
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: center;
-color: #fff;
-margin: 0px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: center;
+    color: #fff;
+    margin: 0px !important;
 }
-.free-trial-btn
-{
+
+.free-trial-btn {
     background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
-border-radius: 15px;
-padding: 26px 72px;
-max-width: 320px;
-font-family: 'Inter-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: center;
-color: #fff;
+    border-radius: 15px;
+    padding: 26px 72px;
+    max-width: 320px;
+    font-family: 'Inter-semibold';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: center;
+    color: #fff;
 }
-.fasten-content-wraper
-{
+
+.fasten-content-wraper {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
     justify-content: center;
 }
-.vision-card
-{
+
+.vision-card {
     padding: 96px 50px;
     background-color: #fff;
     border-radius: 25px;
     max-width: 438px;
 }
-.vision-card-heading
-{
+
+.vision-card-heading {
     font-family: 'Inter-bold';
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: center;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 10px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: center;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 10px !important;
 }
-.vision-card-sb-text
-{
+
+.vision-card-sb-text {
     margin: 0px !important;
     font-family: 'Inter-regular';
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-text-align: center;
-color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
 }
-.vision-cards-wraper
-{
-    position: absolute;
-    bottom: -285px;
+
+.vision-cards-wraper {
+    position: static;
+    /* bottom: -285px; */
     display: flex;
     flex-direction: row;
     gap: 68px;
     align-items: center;
     justify-content: center;
 }
-.vision-section
-{
+
+.boy-reading-img {
+    width: 100%;
+}
+
+.vision-section {
+    display: flex;
+    align-items: center;
+    justify-content: bottom;
+    flex-direction: column;
+    position: relative;
     padding: 150px 120px;
     background-color: #F4F5F8;
 }
-.for-absolute-position-div
-{
+
+.for-absolute-position-div {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.assist-left-q
-{
+
+.assist-left-q {
     font-family: 'Inte-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 15px !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 15px !important;
 }
-.assist-left-h
-{
+
+.assist-left-h {
     font-family: 'Inter-Bold';
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 15px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 15px !important;
 }
-.assist-left-sb-text
-{
+
+.assist-left-sb-text {
     font-family: 'Inter-regular';
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-text-align: left;
-color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
 }
-.satisfy-text
-{
+
+.satisfy-text {
     margin: 0px !important;
     font-family: 'Inte-semibold';
-font-size: 30px;
-font-weight: 600;
-line-height: 40px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
 }
-.assist-div-left-wrape-bottom-first
-{
+
+.assist-div-left-wrape-bottom-first {
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
     justify-content: center;
 }
-.assist-div-left-wrape-bottom
-{
+
+.assist-div-left-wrape-bottom {
     margin-top: 50px !important;
     display: flex;
     flex-direction: row;
@@ -340,8 +395,8 @@ color: transparent;
     justify-content: flex-start;
     gap: 15px;
 }
-.assist-div-wraper
-{
+
+.assist-div-wraper {
     margin-top: 425px !important;
     display: flex;
     flex-direction: row;
@@ -349,21 +404,40 @@ color: transparent;
     justify-content: space-between;
     gap: 17px;
 }
-.available-text-timing
+
+/* .assist-left-sb-text-wrape
 {
-    font-family: 'Inter-Bold';
-font-size: 60px;
-font-weight: 700;
-line-height: 72.61px;
-text-align: left;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 12px !important;
+    width: 468px !important;
+} */
+.bottom-img-quran {
+    width: 100%;
 }
-.available-text-timing-sb-text
-{
+
+.bottom-wrape-section {
+    margin-top: 150px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    gap: 111px;
+}
+
+.available-text-timing {
+    font-family: 'Inter-Bold';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 12px !important;
+}
+
+.available-text-timing-sb-text {
     font-family: 'Inter-regular';
     font-size: 18px;
     font-weight: 400;
@@ -372,8 +446,8 @@ margin-bottom: 12px !important;
     color: #000000;
     margin-bottom: 12px !important;
 }
-.list-item
-{
+
+.list-item {
     font-family: 'Inter-regular';
     font-size: 18px;
     font-weight: 400;
@@ -381,51 +455,147 @@ margin-bottom: 12px !important;
     text-align: left;
     color: #000000;
 }
-.available-img-or-content-wraper
-{
+
+.Welcome-text {
+    font-family: 'Inte-semibold';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 0px !important;
+}
+
+.scroll-text-container {
+    overflow: hidden;
+    /* Hides the text outside the container */
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    /* Full width of the container */
+    height: 50px;
+    /* Adjust height as needed */
+    background-color: #f9f9f9;
+    /* Optional: background color */
+}
+
+.scroll-text-container {
+    overflow: hidden;
+    /* Hides the text outside the container */
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* Full width of the container */
+    height: 50px;
+    /* Adjust height as needed */
+    background-color: #f9f9f9;
+    /* Optional: background color */
+}
+
+.scroll-text-wraper {
+    display: inline-block;
+    animation: scroll-left 22s linear infinite;
+    /* Slower animation with 22s duration */
+    white-space: nowrap;
+    /* Ensures smooth scrolling */
+    position: relative;
+}
+
+.welcome-text {
+    display: inline-block;
+    padding: 0 50px;
+    /* Spacing between text elements */
+    font-family: 'Inte-semibold', sans-serif;
+    /* Add fallbacks for the font */
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: left;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the gradient background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    /* Make the text color transparent to show the gradient */
+    margin-bottom: 0px !important;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+        /* Start from outside the right */
+    }
+
+    10% {
+        transform: translateX(0);
+        /* Move the text to its correct position immediately */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move to outside the left */
+    }
+}
+
+
+
+
+.available-img-or-content-wraper {
     margin-top: 150px !important;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap:111px ;
+    gap: 111px;
 }
-.link-text
-{
-    color:  #2BA59B;
+
+.link-text {
+    color: #2BA59B;
     font-family: 'Inte-semibold';
-font-size: 18px;
-font-weight: 600;
-line-height: 21.78px;
-text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
 }
-.footer-top-div
-{
+
+.footer-top-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.footer-container
-{
+
+.footer-container {
     padding: 20px 120px 54px;
     background-color: #000000;
 }
-.bottom-contact
-{
+
+.bottom-contact {
     font-family: Inter;
-font-size: 22px;
-font-weight: 600;
-line-height: 26.63px;
-text-align: left;
-background: linear-gradient(169.97deg, #FFFFFF 8.65%, #CDCDCD 93.64%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 12px !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: left;
+    background: linear-gradient(169.97deg, #FFFFFF 8.65%, #CDCDCD 93.64%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 12px !important;
 }
-.link-text-bottom
-{
+
+.link-text-bottom {
     font-family: 'Inter-regular';
     font-size: 18px;
     font-weight: 400;
@@ -433,154 +603,216 @@ margin-bottom: 12px !important;
     text-align: left;
     color: #fff;
 }
-.links-footer-wraper
-{
+
+.links-footer-wraper {
     display: flex;
     flex-direction: column;
     gap: 18px;
     align-items: top;
     justify-content: left;
 }
-.card-home
-{
-    width: 18rem !important;   
+
+.assist-section {
+    margin-top: 150px !important;
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.card-home {
+    width: 18rem !important;
     margin: auto !important;
     border-Radius: 10px !important;
-    overflow: hidden  !important;
+    overflow: hidden !important;
 }
-.footer-wraper
-{
+
+.footer-wraper {
     display: flex;
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
 }
-@media(max-width:1400px)
-{
-    .large-img-problem
-    {
+
+@media(max-width:1400px) {
+    .large-img-problem {
         width: 1050px !important;
     }
+
     .vision-card {
         padding: 70px 40px;
         background-color: #fff;
         border-radius: 25px;
         max-width: 418px;
     }
+
     .vision-card-heading {
         font-size: 56px;
         line-height: 65.61px;
         margin-bottom: 7px !important;
     }
+
     .vision-cards-wraper {
         position: static;
         gap: 40px;
     }
+
     .for-absolute-position-div {
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 45px;
     }
+
     .assist-div-wraper {
         margin-top: 100px !important;
-        display: flex
-    ;
+        display: flex;
         flex-direction: column;
         align-items: top;
         justify-content: space-between;
         gap: 17px;
     }
-    
+
 }
-@media(max-width:1145px)
-{
+
+@media(max-width:1200px) {
+    .assist-section {
+        margin-top: 120px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .assist-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bottom-img-quran {
+        width: 530px;
+    }
+
+    .bottom-wrape-section {
+        margin-top: 130px !important;
+        gap: 50px !important;
+    }
+
+    .assist-left-q {
+        text-align: center;
+    }
+
+    .assist-left-h {
+        text-align: center;
+    }
+
+    .assist-left-sb-text {
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:1145px) {
     .fasten-text {
         font-size: 44px;
         line-height: 52.61px;
-       
+
     }
+
     .offer-card-wraper {
         margin-top: 70px !important;
-        display: grid ;
+        display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
         gap: 25px;
     }
+
     .available-img-or-content-wraper {
         gap: 50px;
-        display: flex
-;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
+
     .assist-div-wraper {
         margin-top: 75px !important;
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         align-items: top;
         justify-content: space-between;
         gap: 42px;
     }
+
     .vision-card {
         padding: 60px 35px;
         background-color: #fff;
         border-radius: 25px;
         max-width: 400px;
     }
+
     .large-img-problem {
         width: 955px !important;
     }
+
     .vision-cards-wraper {
         bottom: -230px;
         gap: 50px;
     }
+
     .offer-section {
         padding: 100px 65px;
     }
 }
-@media(max-width:1075px)
-{
+
+@media(max-width:1075px) {
     .large-img-problem {
         width: 855px !important;
     }
+
     .vision-card-heading {
         font-size: 52px;
         line-height: 57.61px;
         margin-bottom: 7px !important;
     }
+
     .vision-card {
         padding: 50px 30px;
         background-color: #fff;
         border-radius: 25px;
         max-width: 388px;
     }
-    
+
 }
-@media(max-width:1020px)
-{
+
+@media(max-width:1020px) {
     .offer-card-wraper {
         margin-top: 70px !important;
-        display: grid ;
+        display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
         gap: 25px;
     }
+
     .vision-card {
         padding: 40px 30px;
         background-color: #fff;
         border-radius: 25px;
         max-width: 350px;
     }
+
     .vision-card-heading {
         font-size: 48px;
         line-height: 48.61px;
         margin-bottom: 7px !important;
     }
+
     .vision-cards-wraper {
         display: flex;
         flex-direction: row;
@@ -591,24 +823,25 @@ margin-bottom: 12px !important;
         bottom: -206px;
         gap: 40px;
     }
+
     .vision-card {
         padding: 40px 28px;
         background-color: #fff;
         border-radius: 25px;
         height: 240px !important;
     }
-    .for-absolute-position-div
-    {
+
+    .for-absolute-position-div {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 45px;
     }
-    
+
 }
-@media(max-width:1000px)
-{
+
+@media(max-width:1000px) {
     .choose-section-left-right-wraper {
         display: flex;
         flex-direction: row;
@@ -617,29 +850,41 @@ margin-bottom: 12px !important;
         align-items: center;
         justify-content: center;
     }
-    .choose-section-top-text
-    {
+
+    .bottom-wrape-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .choose-section-top-text {
         text-align: center;
         margin-bottom: 10px !important;
     }
-    .choose-section-second-text
-    {
-        text-align: center; 
+
+    .choose-section-second-text {
+        text-align: center;
     }
+
     .choose-content-left {
         margin-top: 71px !important;
         display: flex;
         flex-direction: row;
         gap: 30px;
     }
+
     .offer-section {
         padding: 80px 90px;
     }
+
     .experence-text {
         font-size: 20px;
         line-height: 22.26px;
         margin-bottom: 10px;
     }
+
     .available-img-or-content-wraper {
         margin-top: 85px !important;
         display: flex;
@@ -648,19 +893,22 @@ margin-bottom: 12px !important;
         justify-content: space-between;
         gap: 45px;
     }
+
     .sb-text-card-choose {
         font-size: 15px;
         line-height: 20px;
     }
+
     .choose-section {
         padding: 0px 118px 70px 118px;
     }
 }
-@media(max-width:995px)
-{
+
+@media(max-width:995px) {
     .large-img-problem {
         width: 755px !important;
     }
+
     .vision-cards-wraper {
         width: 100% !important;
         display: flex;
@@ -670,36 +918,41 @@ margin-bottom: 12px !important;
         gap: 30px;
         position: static;
     }
+
     .assist-div-wraper {
         margin-top: 75px !important;
-        display: flex ;
+        display: flex;
         flex-direction: column;
         align-items: top;
         justify-content: space-between;
         gap: 42px;
     }
+
     .vision-section {
         padding: 95px 70px;
     }
+
     .vision-card {
         padding: 40px 28px;
         background-color: #fff;
         border-radius: 25px;
-      width: 100%;
+        width: 100%;
     }
 }
-@media(max-width:885px)
-{
+
+@media(max-width:885px) {
     .choose-section {
         padding: 0px 70px 70px 70px;
     }
+
     .large-img-problem {
         width: 685px !important;
     }
 }
-@media(max-width:800px)
-{
+
+@media(max-width:800px) {
     .vision-cards-wraper {
+        margin-top: 30px;
         width: 100% !important;
         display: flex;
         align-items: center;
@@ -707,69 +960,78 @@ margin-bottom: 12px !important;
         flex-direction: column;
         gap: 25px;
     }
+
+    .bottom-img-quran {
+        width: 100% !important;
+    }
+
     .fasten-text {
         font-size: 38px;
         line-height: 48.61px;
     }
+
     .fasten-content-wraper {
-        display: flex
-    ;
+        display: flex;
         flex-direction: column;
         gap: 20px;
     }
+
     .fasten-section {
         padding: 100px 30px;
     }
 }
 
-@media(max-width:780px)
-{
+@media(max-width:780px) {
     .offer-section {
         padding: 65px 55px;
     }
+
     .assist-div-left-wrape-bottom {
         margin-top: 50px !important;
-        display: flex  ;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: left;
         gap: 15px;
     }
 
-    .free-trial-btn  {
+    .free-trial-btn {
         padding: 18px 20px;
         max-width: 258px;
         font-size: 16px;
         line-height: 11.63px;
     }
+
     .large-img-problem {
         width: 545px !important;
     }
-    
+
 }
-@media(max-width:740px)
-{
+
+@media(max-width:740px) {
     .sb-text-card-choose {
         font-size: 14px;
         line-height: 20px;
     }
-   
+
     .choose-section {
         padding: 0px 60px 60px 60px;
     }
+
     .experence-text {
         font-size: 18px;
         line-height: 18.26px;
         margin-bottom: 4px;
     }
+
     .choose-content-left {
         margin-top: 45px !important;
-        display: flex
-;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
     }
+
     .view-btn {
         font-size: 21px;
         line-height: 21.63px;
@@ -777,19 +1039,23 @@ margin-bottom: 12px !important;
         width: 200px;
         height: 60px;
     }
+
     .choose-section-second-text {
         font-size: 54px;
         line-height: 58.61px;
     }
+
     .vision-section {
         padding: 80px 60px;
     }
+
     .assist-left-h {
         font-family: 'Inter-Bold';
         font-size: 40px;
         font-weight: 700;
         line-height: 45.61px;
     }
+
     .card-home {
         width: 16rem !important;
         margin: auto !important;
@@ -797,15 +1063,17 @@ margin-bottom: 12px !important;
         overflow: hidden !important;
     }
 }
-@media(max-width:630px)
-{
+
+@media(max-width:630px) {
     .offer-section {
         padding: 50px 40px;
     }
+
     .fasten-text {
         font-size: 28px;
         line-height: 38.61px;
     }
+
     .offer-card-wraper {
         margin-top: 70px !important;
         display: grid;
@@ -813,190 +1081,257 @@ margin-bottom: 12px !important;
         grid-template-rows: repeat(6, auto);
         gap: 25px;
     }
-    .card-home
-{
-    width: 15rem !important;   
+
+    .accordian-top-q {
+        font-size: 15px !important;
+        line-height: 16.78px !important;
+    }
+
+    .accordiian-wrape {
+        padding: 10px 15px !important;
+    }
+
+    .card-home {
+        width: 15rem !important;
+    }
+
+    .view-btn {
+        font-size: 18px;
+        line-height: 22.63px;
+        padding: 14px 0px;
+        width: 158px;
+        height: 50px;
+    }
+
+    .offer-section-bottom-btn-wrape {
+        margin-top: 25px !important;
+    }
+
+    .assist-section {
+        margin-top: 40px !important;
+    }
+
+    .bottom-wrape-section {
+        margin-top: 40px !important;
+    }
+
+    .offer-section-second-text {
+        font-size: 40px;
+        line-height: 42.61px;
+    }
+
+    .offer-card-wraper {
+        margin-top: 30px !important;
+        gap: 19px;
+    }
+
+    .quran-home-bottom-img {
+        width: 400px !important;
+    }
+
+    .large-img-problem {
+        width: 400px !important;
+    }
 }
-.view-btn {
-    font-size: 18px;
-    line-height: 22.63px;
-    padding: 14px 0px;
-    width: 158px;
-    height: 50px;
-}
-.offer-section-bottom-btn-wrape {
-    margin-top: 25px !important;
-}
-.offer-section-second-text {
-    font-size: 40px;
-    line-height: 42.61px;
-}
-.offer-card-wraper {
-    margin-top: 30px !important;
-    gap: 19px;
-}
-.quran-home-bottom-img
-{
-    width: 400px !important;
-}
-.large-img-problem {
-    width: 400px !important;
-}
-}
-@media(max-width:460px)
-{
+
+@media(max-width:460px) {
     .choose-section-top-text {
         font-size: 18px;
         line-height: 21.63px;
         margin-bottom: 8px !important;
     }
+    .accordian-top-q {
+        font-family: 'Inter-medium' !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 20.78px !important;
+        text-align: left !important;
+        color: #000000 !important;
+    }
+
     .choose-section-second-text {
         font-size: 40px;
         line-height: 44.61px;
     }
+
     .accordiian-wrape {
         padding: 10px 10px !important;
     }
+
     .choose-section {
         padding: 0px 30px 40px 30px;
     }
-    .icon-img-width
-    {
+
+    .icon-img-width {
         width: 40px !important;
     }
+
     .quran-home-bottom-img {
         width: 300px !important;
     }
+
     .large-img-problem {
         width: 325px !important;
     }
-    .boys-circle-img-width
-    {
+
+    .boys-circle-img-width {
         width: 200px !important;
     }
+
     .vision-section {
         padding: 50px 30px;
     }
+
     .vision-card-heading {
         font-size: 30px;
         line-height: 32px;
         margin-bottom: 2px !important;
     }
+
     .assist-left-h {
         font-size: 24px;
         line-height: 33.61px;
         text-align: center;
         margin-bottom: 10px !important;
     }
+
     .available-text-timing {
         font-size: 28px;
         line-height: 30.61px;
         text-align: center;
         margin-bottom: 8px !important;
     }
+
     .assist-div-left-wrape-bottom {
         margin-top: 20px !important;
         gap: 15px;
     }
+
     .available-text-timing-sb-text {
         font-size: 13px;
         line-height: 21px;
         text-align: left;
         margin-bottom: 8px !important;
     }
+
     .list-item {
         font-size: 13px;
         line-height: 22px;
     }
+
     .assist-left-sb-text {
         font-size: 13px;
         line-height: 20px;
         text-align: left;
-      
+
     }
-.assist-left-q {
-    font-size: 16px;
-    line-height: 17.63px;
-    text-align: center;
-    margin-bottom: 10px !important;
-}
-    .percentage-img
-    {
+
+    .assist-left-q {
+        font-size: 16px;
+        line-height: 17.63px;
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+
+    .percentage-img {
         width: 50px;
     }
+
     .satisfy-text {
         font-size: 16px;
         line-height: 20px;
-    }    
+    }
+
     .vision-card-sb-text {
         font-size: 12px;
         line-height: 20px;
     }
+
     .vision-card {
-        padding:35px 28px;
+        padding: 35px 28px;
         border-radius: 25px;
     }
 }
-@media(max-width:455px)
-{
+
+@media(max-width:455px) {
     .vision-card {
-        padding:35px 28px;
+        padding: 35px 28px;
         border-radius: 25px;
         height: 155px !important;
     }
 }
-@media(max-width:376px)
-{
+
+@media(max-width:376px) {
     .sb-text-card-choose {
         font-size: 12px;
         line-height: 20px;
     }
+
     .choose-section-second-text {
         font-size: 34px;
         line-height: 38.61px;
     }
+
     .fasten-text {
         font-size: 17px;
         line-height: 25.61px;
     }
+
     .quran-home-bottom-img {
-        width:255px !important;
+        width: 255px !important;
     }
+
     .vision-card {
-        padding:35px 28px;
+        padding: 35px 28px;
         border-radius: 25px;
         height: 200px;
     }
+
+    .offer-section-second-text {
+        font-size: 34px;
+        line-height: 35.61px;
+    }
+
     .choose-section-top-text {
         font-size: 16px;
         line-height: 17.63px;
         margin-bottom: 8px !important;
     }
+
     .first-row {
-        display: flex ;
+        display: flex;
         flex-direction: row;
         gap: 15px;
         flex-wrap: wrap;
     }
+
     .large-img-problem {
         width: 270px !important;
     }
-    
+
     .assist-div-wraper {
         margin-top: 40px !important;
         gap: 40px;
     }
+
+    .accordian-top-q {
+        font-size: 13px !important;
+        line-height: 20.78px !important;
+    }
+
     .assist-left-q {
         font-size: 16px;
         line-height: 17.63px;
         margin-bottom: 10px !important;
     }
+
     .assist-left-h {
         font-size: 24px;
         line-height: 33.61px;
         text-align: center;
         margin-bottom: 10px !important;
     }
+
     .choose-content-left {
         margin-top: 30px !important;
         display: flex;
@@ -1005,15 +1340,3 @@ margin-bottom: 12px !important;
         gap: 15px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

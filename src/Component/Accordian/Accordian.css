@@ -12,9 +12,26 @@
     flex-direction: column !important;
    gap: 15px !important;
 }
+.accordian-top-q
+{
+    font-family: 'Inter-medium' !important;
+font-size: 18px !important;
+font-weight: 500 !important ;
+line-height: 21.78px !important;
+text-align: left !important;
+color: #000000 !important;
+}
 @media(max-width:460px)
 {
     .accordiian-wrape {
         padding: 10px 10px !important;
+    }
+    .accordian-top-q {
+        font-family: 'Inter-medium' !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 20.78px !important;
+        text-align: left !important;
+        color: #000000 !important;
     }
 }

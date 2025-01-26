@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 const pages = [
   { name: "Home", path: "/" },
-  { name: "Our Course", path: "/" },
+  { name: "Our Course", path: "/Courses" },
   { name: "Fees Plan", path: "/Fees-plan" },
   { name: "Registration", path: "/Registration" },
   { name: "About", path: "/About-us" },

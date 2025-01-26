@@ -106,6 +106,10 @@ margin: 0px !important;
     align-items: flex-start;
     justify-content: left;
 }
+.contact-bottom-line-set
+{
+  width:100%;
+}
 .logos-or-text-wraper
 {
     margin-top: 30px !important;
@@ -435,10 +439,73 @@ margin-bottom: 15px !important;
     {
        width: 260px !important;
     }
+    .contact-text {
+      font-size: 35px;
+      line-height: 40.61px;
+  }
+  .contact-sb-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+.contact-content-wraper {
+  padding: 30px 25px 35px 25px;
+}
+.get-in-text {
+  font-size: 35px;
+  line-height: 35.61px;
+}
+.get-sb-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.logo-address {
+  width: 40px !important;
+}
+.contact-address {
+  font-size: 20px;
+  line-height: 25.31px;
+}
+.contact-address-sb-text {
+  font-size: 14px;
+  line-height: 14.78px;
+}
+.follow-logo-img {
+  width: 40px !important;
+}
+.folow-text {
+  font-size: 20px;
+  line-height: 20.31px;
+  margin-bottom: 10px !important;
+}
+.form-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  line-height: 18.63px;
+}
+.form-title {
+  font-size: 22px;
+  line-height: 22.31px;
+  margin-bottom: 20px !important;
+}
+.logos-or-text-wrape-first {
+  gap: 10px;
+}
     .top-section-english-text {
       font-size: 13px;
       line-height: 20px;
   }
+  .submit-button {
+    border-radius: 10px !important;
+    width: 120px !important;
+    padding: 10px 30px !important;
+    background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
   .top-section-button {
     padding: 17px 18px;
     font-size: 12px;

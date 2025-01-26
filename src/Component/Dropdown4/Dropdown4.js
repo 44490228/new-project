@@ -11,6 +11,7 @@ function NooraniQaidaCard4() {
         src="/Images/4.png" // Replace with your image URL
         alt="Noorani Qaida"
         style={{ objectFit: "cover", height: "200px" }}
+         className="hover-grow-img"
       />
       <Card.Body style={{ padding: "10px 15px" }}>
         <Card.Title style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0" }}>
@@ -27,7 +28,7 @@ function NooraniQaidaCard4() {
         </Card.Title>
         <Collapse in={open}>
           <div id="collapse-text" style={{ marginTop: "10px", fontSize: "14px", color: "#555" }}>
-            This course covers the basics of Quranic reading, including pronunciation and tajweed.
+          Quran Translation helps learners understand the meanings of Quranic verses by studying translations in their preferred language.
           </div>
         </Collapse>
       </Card.Body>

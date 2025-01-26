@@ -109,6 +109,12 @@ color: #fff;
 margin-top: 48px !important;
 text-decoration: none;
 }
+.fees-plan-bottom-btn:hover{
+    background: linear-gradient(to right, #2BA59B, #103F3B);
+}
+.fees-plan-bottom-btn-second:hover{
+    background: linear-gradient(to right, #2BA59B, #103F3B);
+}
 .fees-plan-bottom-btn-wrape
 {
     display: flex;

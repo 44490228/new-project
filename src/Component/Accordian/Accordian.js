@@ -17,7 +17,7 @@ export default function AccordionUsage() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography component="span">Can I choose any time for the classes?</Typography>
+          <Typography className='accordian-top-q' component="span">Can I choose any time for the classes?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -30,7 +30,7 @@ export default function AccordionUsage() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography component="span">What happens if I have to miss class for any reason?</Typography>
+          <Typography className='accordian-top-q' component="span">What happens if I have to miss class for any reason?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -43,7 +43,7 @@ export default function AccordionUsage() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography component="span">Do the staff members include any female teachers to instruct the female students?</Typography>
+          <Typography className='accordian-top-q' component="span">Do the staff members include any female teachers to instruct the female students?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -56,7 +56,7 @@ export default function AccordionUsage() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography component="span">Do you have a master's degree if you teach Urdu?</Typography>
+          <Typography className='accordian-top-q' component="span">Do you have a master's degree if you teach Urdu?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -69,7 +69,7 @@ export default function AccordionUsage() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography component="span">What is the process for memorizing the Qur'an?</Typography>
+          <Typography className='accordian-top-q' component="span">What is the process for memorizing the Qur'an?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

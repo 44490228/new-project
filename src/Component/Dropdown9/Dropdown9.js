@@ -11,6 +11,7 @@ function NooraniQaidaCard9() {
         src="/Images/subject-img.png" // Replace with your image URL
         alt="Noorani Qaida"
         style={{ objectFit: "cover", height: "200px" }}
+         className="hover-grow-img"
       />
       <Card.Body style={{ padding: "10px 15px" }}>
         <Card.Title style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0" }}>
@@ -28,7 +29,7 @@ function NooraniQaidaCard9() {
         </Card.Title>
         <Collapse in={open}>
           <div id="collapse-text" style={{ marginTop: "10px", fontSize: "14px", color: "#555" }}>
-            This course covers the basics of Quranic reading, including pronunciation and tajweed.
+          The Quran is a guide for humanity, emphasizing belief in God, justice, and moral conduct. It provides teachings on worship, law, and spirituality, guiding believers to live righteous lives.
           </div>
         </Collapse>
       </Card.Body>

@@ -58,6 +58,10 @@
     text-align: left;
     color: #00000080;
   }
+  .submit-button:hover
+  {
+    background: linear-gradient(to right, #2BA59B, #103F3B) !important;
+  }
   
   .form-group.full-width {
     flex: 100%;
