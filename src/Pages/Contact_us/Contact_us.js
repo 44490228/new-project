@@ -176,6 +176,11 @@ function Contact_us() {
           </div>
         </div>
       </div>
+      <div className='whatsapp-static'>
+        <a href="https://wa.me/923194908790" target="_blank" rel="noopener noreferrer">
+          <img className='static-img-whatsapp' src='/Images/whatsappstatic.svg' alt="static" />
+        </a>
+      </div>
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className='footer-container'>
             <div className='footer-top-div'>
-                <img src='/Images/main.png' alt='footer-img' />
+                <img src='/Images/main22.png' alt='footer-img' />
                 <p className='bottom-text-with-link'>Do you have any questions or need any assistance? <a className='link-text' href="https://wa.me/923194908790" target="_blank" rel="noopener noreferrer">
                     Chat With Us:
                 </a></p>
@@ -59,14 +59,14 @@ function Footer() {
                 </div>
                 <div className='footer-right-side-wrape'>
                     <div className='get-contact-text-wrape-boder-bottom'>
-                        <p className='get-contact-text'>Get Contact </p>
+                        <p className='get-contact-text'>GET CONTACT </p>
                     </div>
                     <div className='social-links-wrape'>
                         <div>
-                            <img src='/Images/social-links/tiktok.svg' alt='/' />
+                            <img className='tiktok' src='/Images/social-links/tiktok.svg' alt='/' />
                         </div>
                         <div>
-                            <img src='/Images/social-links/thread.svg' alt='/' />
+                            <img className='thread' src='/Images/social-links/thread.svg' alt='/' />
                         </div>
                         <div>
                             <a
@@ -74,7 +74,7 @@ function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
+                                <img className='instagram'
                                     src="/Images/social-links/Intagram.svg"
                                     alt="Instagram"
                                     style={{ cursor: "pointer" }}
@@ -82,7 +82,7 @@ function Footer() {
                             </a>
                         </div>
                         <div>
-                            <img src='/Images/social-links/x.svg' alt='/' />
+                            <img className='x' src='/Images/social-links/x.svg' alt='/' />
                         </div>
                         <div>
                             <a
@@ -98,7 +98,7 @@ function Footer() {
                             </a>
                         </div>
                         <div>
-                            <img src='/Images/social-links/pintrest.svg' alt='/' />
+                            <img className='pintrest' src='/Images/social-links/pintrest.svg' alt='/' />
                         </div>
 
                     </div>

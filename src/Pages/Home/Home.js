@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import './Home.css';
 import ResponsiveAppBar from '../../Component/Navbar/Navbar';
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure you have Bootstrap styles
@@ -13,6 +14,56 @@ import NooraniQaidaCard7 from '../../Component/Dropdown7/Dropdown7';
 import NooraniQaidaCard8 from '../../Component/Dropdown8/Dropdown8';
 import NooraniQaidaCard9 from '../../Component/Dropdown9/Dropdown9';
 import AccordianUsage from '../../Component/Accordian/Accordian';
+
+
+
+const CircleProgress = ({ percentage, label, description }) => {
+    const { ref, inView } = useInView({ threshold: 0.5 }); // Trigger when 50% in view
+    const [progress, setProgress] = useState(0);
+
+    useEffect(() => {
+        if (inView) {
+            let start = 0;
+            const animateProgress = () => {
+                if (start <= percentage) {
+                    setProgress(start);
+                    start += 1;
+                    requestAnimationFrame(animateProgress);
+                }
+            };
+            animateProgress();
+        }
+    }, [inView, percentage]);
+
+    const radius = 50;
+    const circumference = 2 * Math.PI * radius;
+    const strokeDashoffset = circumference - (progress / 100) * circumference;
+
+    return (
+        <div ref={ref} style={{ textAlign: "center", margin: "20px",}}>
+        <svg width="120" height="120">
+            <circle cx="60" cy="60" r={radius} fill="none" stroke="#e0e0e0" strokeWidth="5" />
+            <circle
+                cx="60"
+                cy="60"
+                r={radius}
+                fill="none"
+                stroke="#2BA59B"
+                strokeWidth="5"
+                strokeDasharray={circumference}
+                strokeDashoffset={strokeDashoffset}
+                style={{
+                    transition: "stroke-dashoffset 0.6s ease-in-out",
+                    transform: "rotate(-90deg)",
+                    transformOrigin: "50% 50%",
+                }}
+            />
+        </svg>
+        <h2 className="statisfy-h">{progress}%</h2>
+        <p className="statisfy-text">{label}</p>
+    </div>
+    );
+};
 
 function Home() {
     const [showMore, setShowMore] = useState(false);
@@ -161,6 +212,13 @@ function Home() {
                         </div>
                         <div className='assist-div-left-wrape-bottom-first'>
                             <div className='first-bottom'>
+                                <div className='progress-section'>
+                                    <CircleProgress percentage={90} label="Satisfied Students "  />
+                                    <CircleProgress percentage={98} label="Parents Recommendations"  />
+                                </div>
+
+
+
 
 
                             </div>
@@ -189,10 +247,15 @@ function Home() {
                 </div>
 
             </div>
+            <div className='whatsapp-static'>
+        <a href="https://wa.me/923194908790" target="_blank" rel="noopener noreferrer">
+          <img className='static-img-whatsapp' src='/Images/whatsappstatic.svg' alt="static" />
+        </a>
+      </div>
 
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default Home

@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
 import AppBar from "@mui/material/AppBar";
+import './Navbar.css'
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -46,18 +47,19 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar
+    <AppBar 
       position="static"
       sx={{
+        padding:"0px",
         backgroundColor: "#ffffff",
         boxShadow: "none",
         borderBottom: "1px solid #ddd",
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar sx={{display:"flex",justifyContent:"space-between", padding:"0px"}}>
           {/* Logo */}
-          <Box sx={{ display: "flex", alignItems: "center", mr: { md: 5 } }}>
+          <Box sx={{ display:{ xs: "none", md: "flex" }, alignItems: "center", mr: { md: 5 } }}>
             <img
               src="/Images/toplogo.svg"
               alt="Logo"
@@ -66,7 +68,7 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* Mobile Menu */}
-          <Box sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
+          <Box sx={{ display: { xs: "flex", md: "none" }, }}>
             <IconButton
               size="large"
               aria-label="menu"
@@ -94,30 +96,28 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem
-                  key={page.name}
-                  onClick={() => {
-                    navigate(page.path);
-                    handleCloseNavMenu();
-                  }}
-                >
-                  <Typography
-                    textAlign="center"
-                    sx={{
-                      fontFamily: "Inte-semibold",
-                      fontSize: "16px",
-                      fontWeight: "600",
-                      textTransform: "capitalize",
-                      color: "linear-gradient(to right, #004d40, #00251a)",
-                    }}
-                  >
-                    {page.name}
-                  </Typography>
-                </MenuItem>
+               <MenuItem className="nav-text-menu"
+               key={page.name}
+               onClick={() => {
+                 navigate(page.path);
+                 handleCloseNavMenu();
+               }}
+             >
+               <Typography className="nav-text-menu">
+                 {page.name}
+               </Typography>
+             </MenuItem>
+             
               ))}
             </Menu>
           </Box>
-
+          <Box sx={{ display:  { xs: "flex", md: "none" }, alignItems: "center", mr: { md: 5 } }}>
+            <img
+              src="/Images/toplogo.svg"
+              alt="Logo"
+              style={{ height: "50px", marginRight: "10px" }}
+            />
+          </Box>
           {/* Desktop Links */}
           <Box
             sx={{
@@ -128,7 +128,7 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <Button
+              <Button 
                 key={page.name}
                 onClick={() => navigate(page.path)}
                 sx={{
@@ -152,8 +152,8 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          {/* Contact Us Button for Desktop */}
-          {!isSmallScreen && (<Box sx={{ display: { md: "none", lg: "block" } }}>
+          
+          {/* (<Box sx={{ display: { md: "none", md: "block" } }}>
             <Button
               variant="contained"
               sx={{
@@ -174,10 +174,10 @@ function ResponsiveAppBar() {
             >
               Contact Us
             </Button>
-          </Box>)}
+          </Box>) */}
 
           {/* Contact Us Button for Mobile */}
-          <Box sx={{ display: { xs: "block", md: "none" } }}>
+          <Box sx={{ display: "flex" }}>
             <Button
               variant="contained"
               sx={{
@@ -188,10 +188,7 @@ function ResponsiveAppBar() {
                 textTransform: "none",
                 fontWeight: "bold",
                 fontSize: "1rem",
-                position: "absolute", // To fix the position on top-right
-                right: "10px", // Adjust to your desired distance from the right
-                top: "10px", // Adjust to your desired distance from the top
-                zIndex: 1000, // Ensure the button is on top
+                
                 "&:hover": {
                   background: "linear-gradient(to right, #004d40, #00251a)",
                 },

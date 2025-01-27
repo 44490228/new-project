@@ -29,7 +29,15 @@ function NooraniQaidaCard9() {
         </Card.Title>
         <Collapse in={open}>
           <div id="collapse-text" style={{ marginTop: "10px", fontSize: "14px", color: "#555" }}>
-          The Quran is a guide for humanity, emphasizing belief in God, justice, and moral conduct. It provides teachings on worship, law, and spirituality, guiding believers to live righteous lives.
+            <p>We offer all type of subjects including sciences or arts.</p>
+          <ul>
+            <li>English</li>
+            <li>Urdu</li>
+            <li>Math</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>bio</li>
+          </ul>
           </div>
         </Collapse>
       </Card.Body>

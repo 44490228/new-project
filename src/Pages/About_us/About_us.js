@@ -31,13 +31,13 @@ export default function About_us() {
         <div className='about-content-wrape'>
           <div className='about-left-side'>
             <p className='about-left-top-h'>Exploring the Marvels of Celestial Revelation.</p>
-            <p className='paragraph-text-about'>Welcome to <span className='bold-text'>Taleem Ul Quran Services,</span> where learning and understanding the Holy Quran becomes a transformative journey of faith, knowledge, and spiritual growth. the Quran, Tafsir, Qaida, and Namaz accessible and convenient for everyone</p>
+            <p className='paragraph-text-about'>Welcome to <span className='bold-text'>Taleem Ul Quran Official,</span> where learning and understanding the Holy Quran becomes a transformative journey of faith, knowledge, and spiritual growth. the Quran, Tafsir, Qaida, and Namaz accessible and convenient for everyone</p>
             <br />
-            <p className='paragraph-text-about'>At <span className='bold-text'>Taleem Ul Quran Services,</span> we believe that everyone should have the opportunity to learn, and our online teacher services are ready to assist them all. Our team of experienced instructors is dedicated to providing high-quality education in a comfortable and supportive environment.</p>
+            <p className='paragraph-text-about'>At <span className='bold-text'>Taleem Ul Quran Official,</span> we believe that everyone should have the opportunity to learn, and our online teacher services are ready to assist them all. Our team of experienced instructors is dedicated to providing high-quality education in a comfortable and supportive environment.</p>
             <br />
             <p className='paragraph-text-about'>We offers online courses to kids and adults throughout the world. It is a global, online, educational institute, committed to set standards in Quranic education in the simplest and successful manners .</p>
             <br />
-            <p className='paragraph-text-about'>Join us at  <span className='bold-text'>Taleem Ul Quran Services </span> and experience a world of enlightenment, knowledge, and spiritual growth, led by qualified and experienced tutors.</p>
+            <p className='paragraph-text-about'>Join us at  <span className='bold-text'>Taleem Ul Quran Official </span> and experience a world of enlightenment, knowledge, and spiritual growth, led by qualified and experienced tutors.</p>
 
           </div>
           <div className='about-right-side'>
@@ -48,16 +48,21 @@ export default function About_us() {
 
         </div>
         <div className='about-contact-btn-wrape'>
-        <a
-                                    href="https://wa.me/923194908790"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="about-contact-btn"
-                                >
-                                    Book a Free Trial
-                                </a>
+          <a
+            href="https://wa.me/923194908790"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-contact-btn"
+          >
+            Book a Free Trial
+          </a>
         </div>
 
+      </div>
+      <div className='whatsapp-static'>
+        <a href="https://wa.me/923194908790" target="_blank" rel="noopener noreferrer">
+          <img className='static-img-whatsapp' src='/Images/whatsappstatic.svg' alt="static" />
+        </a>
       </div>
       <Footer />
 

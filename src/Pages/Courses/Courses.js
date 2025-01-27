@@ -25,7 +25,7 @@ export default function Courses() {
         <div className="main-page-wraper">
             <ResponsiveAppBar />
             {/* Top Section */}
-            <div className="top-section">
+            <div className="top-section-second-courses">
                 <div className="top-section-center-div">
                     <div>
                         <img
@@ -136,7 +136,11 @@ export default function Courses() {
                     Book a Free Trial
                 </a>
             </div>
-
+            <div className='whatsapp-static'>
+        <a href="https://wa.me/923194908790" target="_blank" rel="noopener noreferrer">
+          <img className='static-img-whatsapp' src='/Images/whatsappstatic.svg' alt="static" />
+        </a>
+      </div>
             <Footer />
         </div>
     );

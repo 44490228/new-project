@@ -1,5 +1,4 @@
-.main-fees-plan-top-div
-{
+.main-fees-plan-top-div {
     background: url('/public/Images/fees-plan-top-img.png');
     background-size: cover;
     background-position: center;
@@ -9,120 +8,134 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInScale 1.5s ease-out forwards;
 }
-.facilities-provide-wrape
-{
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9); /* Smaller size */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Original size */
+    }
+}
+
+.facilities-provide-wrape {
     margin-top: 30px !important;
-display: flex;
-flex-direction: column;
-gap: 15px;
-align-items: flex-start;
-justify-content: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: left;
 }
-.top-tick-or-text-wrape
-{
+
+.top-tick-or-text-wrape {
     display: flex;
     flex-direction: row;
     gap: 5px;
     align-items: center;
     justify-content: left;
 }
-.tick-text
-{
+
+.tick-text {
     margin: 0px !important;
     font-family: 'Inter-regular';
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
-color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #000000;
 }
-.startup-text
-{
+
+.startup-text {
     margin: 0px !important;
     font-family: 'Inte-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0.01em;
-text-align: center;
-color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
 }
-.dollar-text
-{
+
+.dollar-text {
     font-family: 'Inte-semibold';
-font-size: 65px;
-font-weight: 600;
-line-height: 79.2px;
-letter-spacing: -0.5px;
-text-align: left;
-background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin: 0px !important;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 79.2px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin: 0px !important;
 }
-.sb-text-dollar
-{
+
+.sb-text-dollar {
     margin: 0px !important;
     font-family: 'Inter-Bold';
-font-size: 18px;
-font-weight: 700;
-line-height: 26px;
-text-align: left;
-color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #000000;
 }
-.fees-in-dollar-wrape
-{
+
+.fees-in-dollar-wrape {
     margin: 30px 0px !important;
 }
-.fees-plan-top-div-btn
-{
+
+.fees-plan-top-div-btn {
     background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
-padding: 6px 15px; 
-border-radius: 6px; 
-margin-bottom: 40px;
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin-bottom: 40px;
 }
-.fees-plan-card
-{
+
+.fees-plan-card {
     padding: 50px 47px;
-    border-radius: 32px;
     background-color: #FFFFFF;
-    border: 1px solid transparent;
-    border-image-source: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
-    border-image-slice: 1;
-    box-sizing: border-box; /* Include padding and border in size */
-    background-clip: padding-box; 
+    border: 1px solid transparent !important;
+    border-radius: 32px !important;
+    background: linear-gradient(#ffff, #ffff) padding-box, linear-gradient(90deg, #2BA59B 0%, #103F3B 100%)border-box;
 }
-.fees-plan-bottom-btn
-{
+
+.fees-plan-bottom-btn {
     padding: 25px 30px;
     border-radius: 16px;
     background: linear-gradient(180deg, #2BA59B 0%, #103F3B 100%);
     border: none;
     font-family: 'Inter-medium';
-font-size: 22px;
-font-weight: 500;
-line-height: 26.63px;
-text-align: center;
-color: #fff;
-margin-top: 48px !important;
-text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px;
+    text-align: center;
+    color: #fff;
+    margin-top: 48px !important;
+    text-decoration: none;
 }
-.fees-plan-bottom-btn:hover{
+
+.fees-plan-bottom-btn:hover {
     background: linear-gradient(to right, #2BA59B, #103F3B);
 }
-.fees-plan-bottom-btn-second:hover{
+
+.fees-plan-bottom-btn-second:hover {
     background: linear-gradient(to right, #2BA59B, #103F3B);
 }
-.fees-plan-bottom-btn-wrape
-{
+
+.fees-plan-bottom-btn-wrape {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fees-plan-card-wrape
-{
+
+.fees-plan-card-wrape {
     margin-top: 80px !important;
     display: flex;
     flex-direction: row;
@@ -130,168 +143,181 @@ text-decoration: none;
     justify-content: center;
     gap: 20px;
 }
-.fees-plan-card-top-padding
-{
+
+.fees-plan-card-top-padding {
     padding-top: 75px;
 }
-.heading-fees
-{
+
+.heading-fees {
     font-family: 'Inte-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 24.2px;
-text-align: center;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin-bottom: 15px !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: center;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin-bottom: 15px !important;
 }
-.sb-heading
-{
+
+.sb-heading {
     font-family: 'Inter-Bold';
-font-size: 60px;
-font-weight: 700;
-line-height: 66px;
-text-align: center;
-background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
--webkit-background-clip: text; /* Apply the background to the text */
-background-clip: text; /* Same as above, but for non-webkit browsers */
-color: transparent; 
-margin: 0px !important;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: center;
+    background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+    -webkit-background-clip: text;
+    /* Apply the background to the text */
+    background-clip: text;
+    /* Same as above, but for non-webkit browsers */
+    color: transparent;
+    margin: 0px !important;
 }
-.content-top-feeswraper-wrape
-{
+
+.content-top-feeswraper-wrape {
     padding: 150px 120px;
 }
-.fees-plan-card-second
-{
-    padding: 50px 47px;
 
-    background: linear-gradient(168.87deg, #2BA59B 1.27%, #103F3B 97.18%);
-    border: 1px solid transparent; /* Transparent border to prevent fallback color */
-    border-radius: 32px;
-    border-image-source: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
-    border-image-slice: 1; 
+.fees-plan-card-second {
+    padding: 50px 47px;
+    border: 1px solid transparent !important;
+    border-radius: 32px !important;
+    background: linear-gradient(168.87deg, #2BA59B 1.27%, #103F3B 97.18%) padding-box, linear-gradient(90deg, #2BA59B 0%, #103F3B 100%)border-box;
 }
-.fees-plan-top-div-btn-wrape
-{
+
+.fees-plan-top-div-btn-wrape {
     display: flex;
     align-items: flex-start;
 }
-.startup-text-second
-{
+
+.startup-text-second {
     margin: 0px !important;
     font-family: 'Inte-semibold';
-font-size: 22px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0.01em;
-text-align: center;
-color: #000000; 
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #000000;
 }
-.fees-plan-top-div-btn-second
-{
-    padding: 6px 15px; 
-border-radius: 6px; 
-margin-bottom: 40px;
-background-color: #fff;
+
+.fees-plan-top-div-btn-second {
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    background-color: #fff;
 }
-.dollar-text-second
-{
+
+.dollar-text-second {
     margin: 0px !important;
     font-family: 'Inte-semibold';
-font-size: 65px;
-font-weight: 600;
-line-height: 79.2px;
-letter-spacing: -0.5px;
-text-align: left;
-color: #ffff;  
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 79.2px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #ffff;
 }
-.sb-text-dollar-second
-{
+
+.sb-text-dollar-second {
     margin: 0px !important;
     font-family: 'Inter-Bold';
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
     text-align: left;
-    color: #ffff;   
+    color: #ffff;
 }
-.tick-text-second
-{
+
+.tick-text-second {
     margin: 0px !important;
     font-family: 'Inter-regular';
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
-color: #ffff;  
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #ffff;
 }
-.fees-plan-bottom-btn-second
-{
+
+.fees-plan-bottom-btn-second {
     padding: 25px 30px;
     border-radius: 16px;
-   background-color: #ffff;
+    background-color: #ffff;
     border: none;
     font-family: 'Inter-medium';
-font-size: 22px;
-font-weight: 500;
-line-height: 26.63px;
-text-align: center;
-color: #000000;
-margin-top: 48px !important; 
-text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px;
+    text-align: center;
+    color: #000000;
+    margin-top: 48px !important;
+    text-decoration: none;
 }
-.white-line
-{
+
+.white-line {
     width: 100%;
 }
-@media(max-width:1380px)
-{
+
+@media(max-width:1380px) {
     .fees-plan-card-second {
         padding: 45px 40px;
     }
-    .fees-plan-card{
+
+    .fees-plan-card {
         padding: 45px 40px;
     }
+
     .content-top-feeswraper-wrape {
         padding: 130px 100px;
     }
+
     .fees-plan-top-div-btn {
         margin-bottom: 30px;
     }
+
     .fees-plan-top-div-btn-second {
         margin-bottom: 30px;
     }
+
     .startup-text {
         font-size: 20px;
         line-height: 26px;
     }
+
     .startup-text-second {
         font-size: 20px;
         line-height: 26px;
     }
+
     .dollar-text {
         font-size: 58px;
         line-height: 66.2px;
     }
+
     .dollar-text-second {
         font-size: 58px;
         line-height: 66.2px;
     }
+
     .sb-text-dollar {
         font-size: 17px;
         line-height: 20px;
-        
+
     }
+
     .fees-in-dollar-wrape {
         margin: 20px 0px !important;
     }
+
     .facilities-provide-wrape {
         margin-top: 20px !important;
-        gap: 10px;  
+        gap: 10px;
     }
+
     .fees-plan-bottom-btn-second {
         padding: 22px 26px;
         border-radius: 16px;
@@ -299,6 +325,7 @@ text-decoration: none;
         line-height: 22.63px;
         margin-top: 35px !important;
     }
+
     .fees-plan-bottom-btn {
         padding: 22px 26px;
         border-radius: 16px;
@@ -307,51 +334,63 @@ text-decoration: none;
         margin-top: 35px !important;
     }
 }
-@media(max-width:1280px)
-{
+
+@media(max-width:1280px) {
     .fees-plan-card-second {
         padding: 45px 40px;
     }
-    .fees-plan-card{
+
+    .fees-plan-card {
         padding: 45px 40px;
     }
+
     .content-top-feeswraper-wrape {
         padding: 120px 80px;
     }
+
     .fees-plan-top-div-btn {
         margin-bottom: 20px;
     }
+
     .fees-plan-top-div-btn-second {
         margin-bottom: 20px;
     }
+
     .startup-text {
         font-size: 18px;
         line-height: 22px;
     }
+
     .startup-text-second {
         font-size: 18px;
         line-height: 22px;
     }
+
     .dollar-text {
         font-size: 55px;
         line-height: 62px;
     }
+
     .dollar-text-second {
         font-size: 55px;
         line-height: 62px;
     }
+
     .sb-text-dollar {
         font-size: 16px;
         line-height: 20px;
-        
+
     }
+
     .fees-in-dollar-wrape {
         margin: 18px 0px !important;
     }
+
     .facilities-provide-wrape {
         margin-top: 18px !important;
-        gap: 10px;  
+        gap: 10px;
     }
+
     .fees-plan-bottom-btn-second {
         padding: 20px 24px;
         border-radius: 16px;
@@ -359,6 +398,7 @@ text-decoration: none;
         line-height: 22.63px;
         margin-top: 30px !important;
     }
+
     .fees-plan-bottom-btn {
         padding: 20px 24px;
         border-radius: 16px;
@@ -367,8 +407,8 @@ text-decoration: none;
         margin-top: 30px !important;
     }
 }
-@media(max-width:1250px)
-{
+
+@media(max-width:1250px) {
     .fees-plan-card-wrape {
         margin-top: 55px !important;
         display: flex;
@@ -378,62 +418,70 @@ text-decoration: none;
         justify-content: center;
         gap: 20px;
     }
+
     .fees-plan-card-top-padding {
         padding-top: 0px;
     }
 }
-@media(max-width:930px)
-{
+
+@media(max-width:930px) {
     .heading-fees {
         margin-bottom: 10px !important;
     }
+
     .content-top-feeswraper-wrape {
         padding: 75px 72px;
     }
+
     .sb-heading {
         font-size: 45px;
         line-height: 50px;
     }
 }
-@media(max-width:530px)
-{
+
+@media(max-width:530px) {
     .content-top-feeswraper-wrape {
         padding: 55px 35px;
     }
+
     .fees-plan-card-wrape {
         margin-top: 40px !important;
         gap: 20px;
     }
+
     .sb-heading {
         font-size: 40px;
         line-height: 48px;
     }
 }
-@media(max-width:475px)
-{
+
+@media(max-width:475px) {
     .fees-plan-card {
         padding: 35px 30px;
     }
+
     .fees-plan-card-second {
         padding: 35px 30px;
     }
+
     .fees-plan-top-div-btn-second {
         margin-bottom: 15px;
     }
+
     .fees-plan-top-div-btn {
         margin-bottom: 15px;
     }
 }
-@media(max-width:375px)
-{
-    .tick-text
-    {
+
+@media(max-width:375px) {
+    .tick-text {
         font-size: 14px !important;
     }
-    .tick-text-second
-    {
+
+    .tick-text-second {
         font-size: 14px !important;
     }
+
     .fees-plan-bottom-btn {
         padding: 15px 19px;
         border-radius: 16px;
@@ -441,6 +489,7 @@ text-decoration: none;
         line-height: 22.63px;
         margin-top: 17px !important;
     }
+
     .fees-plan-bottom-btn-second {
         padding: 15px 19px;
         border-radius: 16px;
@@ -448,29 +497,36 @@ text-decoration: none;
         line-height: 22.63px;
         margin-top: 17px !important;
     }
+
     .fees-in-dollar-wrape {
         margin: 0px 0px !important;
     }
+
     .dollar-text {
         font-size: 44px;
         line-height: 54px;
     }
+
     .dollar-text-second {
         font-size: 44px;
         line-height: 54px;
     }
+
     .sb-text-dollar {
         font-size: 15px;
         line-height: 15px;
     }
+
     .sb-text-dollar-second {
         font-size: 15px;
         line-height: 15px;
     }
+
     .facilities-provide-wrape {
         margin-top: 1px !important;
         gap: 3px;
     }
+
     .sb-heading {
         font-size: 33px;
         line-height: 35px;

@@ -7,6 +7,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInScale 1.5s ease-out forwards;
+}
+.top-section-second {
+    padding: 243px 0px 243px 0px !important;
+    background: url('/public/Images/courses-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInScale 1.5s ease-out forwards;
+}
+ @keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9); /* Smaller size */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Original size */
+    }
 }
 .top-section-english-text {
     font-family: "Inter-regular";
@@ -40,7 +66,7 @@
     border-radius: 15px;
     padding: 26px 72px;
     max-width: 320px;
-    font-family: 'Inter-semibold';
+    font-family: 'Inte-semibold';
     font-size: 22px;
     font-weight: 600;
     line-height: 26.63px;
@@ -70,7 +96,6 @@
 .offer-section {
     padding: 150px 120px;
 }
-
 .offer-section-top-text {
     font-family: "Inter-regular";
     font-size: 22px;
@@ -135,7 +160,7 @@
 }
 
 .experence-text {
-    font-family: "Inter-semibold";
+    font-family: "Inte-semibold";
     font-size: 25px;
     font-weight: 600;
     line-height: 30.26px;
@@ -295,6 +320,7 @@
 }
 
 .vision-cards-wraper {
+    margin-top: 100px !important;
     position: static;
     /* bottom: -285px; */
     display: flex;
@@ -381,10 +407,11 @@
 
 .assist-div-left-wrape-bottom-first {
     display: flex;
+    margin-top: 50px !important;
     flex-direction: row;
     gap: 15px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: left;
 }
 
 .assist-div-left-wrape-bottom {
@@ -404,11 +431,6 @@
     justify-content: space-between;
     gap: 17px;
 }
-
-/* .assist-left-sb-text-wrape
-{
-    width: 468px !important;
-} */
 .bottom-img-quran {
     width: 100%;
 }
@@ -445,6 +467,40 @@
     text-align: left;
     color: #000000;
     margin-bottom: 12px !important;
+}
+.statisfy-text
+{
+    font-family: "Inte-semibold";
+font-size: 30px;
+font-weight: 600;
+line-height: 40px;
+text-align: center;
+background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+-webkit-background-clip: text;
+/* Apply the background to the text */
+background-clip: text;
+/* Same as above, but for non-webkit browsers */
+color: transparent;
+margin: 0px !important;
+
+
+}
+.statisfy-h
+{
+    font-family: "Inte-semibold";
+font-size: 40px;
+font-weight: 600;
+line-height: 40px;
+text-align: center;
+background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+-webkit-background-clip: text;
+/* Apply the background to the text */
+background-clip: text;
+/* Same as above, but for non-webkit browsers */
+color: transparent;
+margin: 6px !important;
+
+
 }
 
 .list-item {
@@ -483,6 +539,10 @@
     background-color: #f9f9f9;
     /* Optional: background color */
 }
+.accordians-wraper
+{
+    padding: 10px !important;
+}
 
 .scroll-text-container {
     overflow: hidden;
@@ -499,10 +559,18 @@
     background-color: #f9f9f9;
     /* Optional: background color */
 }
+.progress-section
+{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: left !important;
+    gap: 20px !important;
+}
 
 .scroll-text-wraper {
     display: inline-block;
-    animation: scroll-left 22s linear infinite;
+    animation: scroll-left 16s linear infinite;
     /* Slower animation with 22s duration */
     white-space: nowrap;
     /* Ensures smooth scrolling */
@@ -574,6 +642,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.main-page-wraper
+{
+    overflow-x: hidden;
+}
 
 .footer-container {
     padding: 20px 120px 54px;
@@ -581,7 +653,7 @@
 }
 
 .bottom-contact {
-    font-family: Inter;
+    font-family: 'Inte-semibold';
     font-size: 22px;
     font-weight: 600;
     line-height: 26.63px;
@@ -654,6 +726,7 @@
     }
 
     .vision-cards-wraper {
+        margin-top: 50px !important;
         position: static;
         gap: 40px;
     }
@@ -714,6 +787,10 @@
     .assist-left-sb-text {
         text-align: center;
 
+    }
+    .statisfy-text
+    {  
+    text-align: center;
     }
 
 }
@@ -814,13 +891,14 @@
     }
 
     .vision-cards-wraper {
+        margin-top: 40px !important;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: stretch;
-        position: absolute;
-        bottom: -285px;
-        bottom: -206px;
+        position: static;
+        /* bottom: -285px;
+        bottom: -206px; */
         gap: 40px;
     }
 
@@ -994,6 +1072,11 @@
         justify-content: left;
         gap: 15px;
     }
+    .whatsapp-static {
+        position: fixed;
+        bottom: 35px;
+        right: 15px;
+    }
 
     .free-trial-btn {
         padding: 18px 20px;
@@ -1073,6 +1156,10 @@
         font-size: 28px;
         line-height: 38.61px;
     }
+    .accordians-wraper
+    {
+        padding: 30px !important;
+    }
 
     .offer-card-wraper {
         margin-top: 70px !important;
@@ -1089,6 +1176,31 @@
 
     .accordiian-wrape {
         padding: 10px 15px !important;
+    }
+    .statisfy-text {
+        font-family: "Inte-semibold";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .statisfy-h {
+        font-family: "Inte-semibold";
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+        background: linear-gradient(90deg, #2BA59B 0%, #103F3B 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 2px !important;
+    }
+
+    .accordiian-wrape {
+        padding: 12px 12px !important;
+        border-radius: 15px !important;
+        box-shadow: 0px 4px 4px 0px #00000040 !important;
+        margin: 0px !important;
     }
 
     .card-home {
@@ -1133,12 +1245,36 @@
         width: 400px !important;
     }
 }
+@media(max-width:530px)
+{
+    .accordiian-wrape {
+        padding: 10px 16px !important;
+        border-radius: 15px !important;
+        box-shadow: 0px 4px 4px 0px #00000040 !important;
+        margin: 0px !important;
+    }
+}
 
 @media(max-width:460px) {
     .choose-section-top-text {
         font-size: 18px;
         line-height: 21.63px;
         margin-bottom: 8px !important;
+    }
+    .accordians-wraper
+    {
+        padding: 25px !important;
+    }
+    .progress-section {
+        display: flex !important ;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .assist-div-left-wrape-bottom-first {
+        display: flex !important;
+        margin-top: 0px !important;
     }
     .accordian-top-q {
         font-family: 'Inter-medium' !important;
@@ -1155,6 +1291,7 @@
     }
 
     .accordiian-wrape {
+
         padding: 10px 10px !important;
     }
 
@@ -1186,6 +1323,10 @@
         font-size: 30px;
         line-height: 32px;
         margin-bottom: 2px !important;
+    }
+    .accordians-wraper
+    {
+        padding: 20px !important;
     }
 
     .assist-left-h {
@@ -1271,7 +1412,6 @@
         font-size: 34px;
         line-height: 38.61px;
     }
-
     .fasten-text {
         font-size: 17px;
         line-height: 25.61px;

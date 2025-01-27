@@ -1,0 +1,22 @@
+.nav-text-menu {
+    font-family: "Inte-semibold" !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    background: linear-gradient(to right, #004d40, #00251a) !important;
+    color: transparent !important;
+}
+
+@media(max-width:1130px)
+{
+    .nav-text-menu
+{
+    font-Family: "Inte-semibold" !important;
+    font-Size: 14px !important;
+    white-space: nowrap !important;
+     font-Weight: 600 !important;
+    text-Transform: capitalize !important;
+     color: linear-gradient(to right, #004d40, #00251a) !important;
+}
+}

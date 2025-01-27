@@ -9,6 +9,33 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInScale 1.5s ease-out forwards;
+    
+}
+.static-img-whatsapp {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .static-img-whatsapp:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  }
+.whatsapp-static
+{
+    position: fixed;
+    bottom: 50px;
+    right: 35px;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9); /* Smaller size */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Original size */
+    }
 }
 .about-us-content-wraper
 {
@@ -27,6 +54,10 @@ background-clip: text; /* Same as above, but for non-webkit browsers */
 color: transparent; 
 margin: 0px !important;
 }
+.static-img-whatsapp
+   {
+    width:60px;
+   }
 .paragraph-text-about
 {
     font-family: 'Inter-regular';
@@ -177,6 +208,10 @@ text-decoration: none !important;
 }
 @media(max-width:888px)
 {
+   .static-img-whatsapp
+   {
+    width:60px;
+   }
     .about-us-content-wraper {
         padding: 80px 60px 65px 60px;
     }
@@ -211,6 +246,10 @@ text-decoration: none !important;
 }
 @media(max-width:530px)
 {
+    .static-img-whatsapp
+   {
+    width:50px;
+   }
     .about-us-content-wraper {
         padding: 65px 45px 65px 45px;
     }

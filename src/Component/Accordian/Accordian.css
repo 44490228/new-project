@@ -8,6 +8,10 @@
 }
 .accordians-wraper
 {
+    padding: 10px !important;
+}
+.accordians-wraper
+{
     display: flex !important;
     flex-direction: column !important;
    gap: 15px !important;
@@ -24,6 +28,7 @@ color: #000000 !important;
 @media(max-width:460px)
 {
     .accordiian-wrape {
+       
         padding: 10px 10px !important;
     }
     .accordian-top-q {
@@ -34,4 +39,5 @@ color: #000000 !important;
         text-align: left !important;
         color: #000000 !important;
     }
+    
 }

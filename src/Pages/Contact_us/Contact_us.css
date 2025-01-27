@@ -1,6 +1,6 @@
 .contact-top-div-bg
 {
-    background: url('/public/Images/contact-img.png');
+    background: url('/public/Images/contact-img.png') ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,6 +9,19 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInScale 1.5s ease-out forwards;
+}
+@keyframes fadeInScale {
+  0% {
+      opacity: 0;
+      transform: scale(0.9); /* Smaller size */
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1); /* Original size */
+  }
 }
 .contact-text
 {
@@ -106,10 +119,6 @@ margin: 0px !important;
     align-items: flex-start;
     justify-content: left;
 }
-.contact-bottom-line-set
-{
-  width:100%;
-}
 .logos-or-text-wraper
 {
     margin-top: 30px !important;
@@ -199,6 +208,20 @@ text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: left;
+  }
+  .follow-logo-img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .follow-logo-img:hover {
+    transform: scale(1.1) translateY(5px); /* Slightly enlarges and moves the image downward */
+  }
+  .logo-address {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .logo-address:hover {
+    transform: scale(1.1) translateY(2px); /* Slightly enlarges and moves the image downward */
   }
   .social-links-contact-div-wrape
   {
@@ -300,6 +323,10 @@ margin-bottom: 15px !important;
   }
   @media(max-width:995px)
   {
+    .contact-bottom-line-set
+{
+  width:100% !important;
+}
     .contact-us-iner-wraper {
       margin-top: 30px !important;
       display: flex
