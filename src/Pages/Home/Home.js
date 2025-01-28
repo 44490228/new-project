@@ -213,7 +213,7 @@ function Home() {
                         <div className='assist-div-left-wrape-bottom-first'>
                             <div className='first-bottom'>
                                 <div className='progress-section'>
-                                    <CircleProgress percentage={90} label="Satisfied Students "  />
+                                    <CircleProgress percentage={99} label="Satisfied Students "  />
                                     <CircleProgress percentage={98} label="Parents Recommendations"  />
                                 </div>
 
