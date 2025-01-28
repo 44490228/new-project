@@ -570,7 +570,7 @@ margin: 6px !important;
 
 .scroll-text-wraper {
     display: inline-block;
-    animation: scroll-left 16s linear infinite;
+    animation: scroll-left 50s linear infinite;
     /* Slower animation with 22s duration */
     white-space: nowrap;
     /* Ensures smooth scrolling */
@@ -604,7 +604,7 @@ margin: 6px !important;
         /* Start from outside the right */
     }
 
-    10% {
+    1% {
         transform: translateX(0);
         /* Move the text to its correct position immediately */
     }
