@@ -17,7 +17,7 @@ import AccordianUsage from '../../Component/Accordian/Accordian';
 
 
 
-const CircleProgress = ({ percentage, label, description }) => {
+const CircleProgress = ({ percentage, label,}) => {
     const { ref, inView } = useInView({ threshold: 0.5 }); // Trigger when 50% in view
     const [progress, setProgress] = useState(0);
 
